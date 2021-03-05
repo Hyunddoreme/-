@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class Q2562 {
     public static void main(String[] args) {
         Scanner L = new Scanner(System.in);
-        int p = L.nextInt();
+        int input = L.nextInt();
 
-        int[] arr  = new int [p];
+        int[] arr  = new int [input];
 
-        for(int i = 0 ; i < p ; i++){
+        for(int i = 0 ; i < input ; i++){
             int a = L.nextInt();
-            a = arr[i];
+            arr[i] = a;
         }
 
         int Max = arr[0];
@@ -17,7 +17,7 @@ public class Q2562 {
 
         int i = 0;
 
-        while(i < p){
+        while(i < input){
             if(Min > arr[i]){
                 Min = arr[i];
             }
